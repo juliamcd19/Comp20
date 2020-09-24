@@ -94,6 +94,8 @@ body{
 }
 .aboutc3{
     font-size:14px;
+    height:65%;
+    overflow: scroll;
 }
 
 
