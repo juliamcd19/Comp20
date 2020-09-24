@@ -1,0 +1,76 @@
+<!-- index.html
+Author: Julia McDowell
+Comp20 ProEMS website home page--> 
+
+<html>
+<head>
+    <title>PRO EMS</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <style type="text/css">
+        .pcontainer{
+            padding:10px;
+            width: 100%;
+            position: relative;
+            color: white;
+            text-align:center;
+            top: 150px;
+        }
+
+
+        #homebuttons {
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        #hbut {
+            background-color: #0A10C4;
+            color: #FFFFFF;
+            font-size: 14px;
+            margin: 10px 1px;
+            padding: 10px 20px;
+            border-radius: 14px;
+            width: 170px; 
+        }
+
+        #hbut:hover {
+            background-color: #FFFFFF;
+            color: #0A10C4;
+        }
+             
+    </style>   
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li> <a href="index.html" class="currpage">Home</a></li>
+            <li> <a href="services.html">Services</a></li>
+            <li> <a href="about.html">About</a></li>
+        </ul> 
+    </nav> 
+    <header>
+        <div class="container">
+            <h1 class="title">PROFESSIONAL AMBULANCE AND OXYGEN SERVICE</h1> 
+        </div>
+    </header>
+
+    <div class="pcontainer">
+
+    <h3>Serving Cambridge, Watertown, Belmont, and more</h3>
+        <table id="homebuttons">
+            <tr>
+                <td>
+                    <a href = "services.html" class="button">
+                                    <input type="button" value="Services" id="hbut"></a>
+                </td>
+                <td>
+                    <a href = "about.html" class="button">
+                                    <input type="button" value="About" id="hbut"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer><p>Julia McDowell, COMP20 Fall 2020</p></footer>
+</body>
+
+</html>
