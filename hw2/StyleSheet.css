@@ -71,11 +71,11 @@ body{
 }
 
 .aboutcontainer {
-    width:1000px;
+    width:90%;
+    height: 20%;
     background-color: #FFFFFF;
     color:#000000;
     text-align:center;
-    height:200px;
     border-radius: 25px;
     border-color: #D0D0D0;
     border-style: groove;
