@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href = "songliststyle.css" ?>
+<!-- songlist.xml
+Author: Julia McDowell
+COMP20 Fall 2020 -->
+<coverBand>
+    <name>Atta Jazz</name>
+    <description>A Jazz-Based Cover Band</description>
+    <songs>
+        <song>
+            <title>A Sunday Kind of Love</title>
+            <artist>Etta James</artist>
+            <genre>Soul</genre>
+            <year>1960</year>
+        </song>
+
+        <song>
+            <title>Mannish Boy</title>
+            <artist>Muddy Waters</artist>
+            <genre>Blues</genre>
+            <year>1955</year>
+        </song>
+
+        <song>
+            <title>Dream A Little Dream Of Me</title>
+            <artist>Ella Fitzgerald</artist>
+            <genre>Jazz</genre>
+            <year>1957</year>
+        </song>
+
+        <song>
+            <title>Cheek to Cheek</title>
+            <artist>Ella Fitzgerald and Louis Armstrong</artist>
+            <genre>Jazz</genre>
+            <year>1956</year>
+        </song>
+
+        <song>
+            <title>I'd Rather Go Blind</title>
+            <artist>Etta James</artist>
+            <genre>RnB</genre>
+            <year>1968</year>
+        </song>
+
+        <song>
+            <title>Something's Got A Hold On Me</title>
+            <artist>Etta James</artist>
+            <genre>RnB</genre>
+            <year>1962</year>
+        </song>
+
+        <song>
+            <title>La vie en rose</title>
+            <artist>Louis Armstrong</artist>
+            <genre>Jazz</genre>
+            <year>1972</year>
+        </song>
+
+        <song>
+            <title>I'll Be Seeing You</title>
+            <artist>Billie Holiday</artist>
+            <genre>Jazz</genre>
+            <year>1944</year>
+        </song>
+
+        <song>
+            <title>What A Diff'rence A Day Made</title>
+            <artist>Dinah Washington</artist>
+            <genre>Jazz</genre>
+            <year>1959</year>
+        </song>
+
+        <song>
+            <title>At Last</title>
+            <artist>Etta James</artist>
+            <genre>Jazz</genre>
+            <year>1960</year>
+        </song>
+    </songs>
+</coverBand>

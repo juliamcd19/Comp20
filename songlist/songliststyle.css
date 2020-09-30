@@ -1,0 +1,15 @@
+@charset "utf-8";
+/**********************
+* songliststyle.css
+* Author: Julia McDowell
+* COMP20 Fall 2020
+***********************/
+coverBand {margin:auto; width:50%;background-color: #F2EEEE}
+coverBand name {font-size:30pt; font-weight:600; color: #FF0000;}
+coverBand description{font-weight:700;}
+song {display:block; border-bottom: 1px solid #1E3FD1; padding : 8px 0;}
+song title {font-size:20pt; font-weight:600;}
+song artist {display:block;}
+song genre {display:block;}
+song year {display:block;}
+

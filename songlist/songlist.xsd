@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema">
+<xs:documentation>songlist.xml
+Author: Julia McDowell
+COMP20 Fall 2020</xs:documentation>
+    <xs:element name="CoverBand">
+        <xs:complextype>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="description" type="xs:string"/>
+                <xs:element name="songs">
+                    <xs:complextype>
+                        <xs:sequence>
+                            <xs:element name="song">
+                                <xs:complextype>
+                                    <xs:sequence maxOccurs="unbounded">
+                                        <xs:element name="title" type="xs:string"/>
+                                        <xs:element name="artist" type="xs:string"/>
+                                        <xs:element name="genre" type="xs:string"/>
+                                        <xs:element name="year" type="xs:int"/>
+                                    </xs:sequence>
+                                </xs:complextype>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complextype>
+                </xs:element>
+            </xs:sequence>
+        </xs:complextype>
+    </xs:element>
+</xs:schema>
+
