@@ -1,0 +1,56 @@
+<!-- joes.html
+Author: Julia McDowell
+Comp20 Fall 2020 -->
+
+<html>
+<head>
+    <title>Joe's Hotdogs</title>
+    <!-- style -->
+</head>
+<body>
+    <!-- prompt for orders -->
+    <script>var dogs = prompt("How many hot dogs?", "0")</script>
+    <script>var fries = prompt("How many french fries?", "0");</script>
+    <script>var drinks = prompt("How many drinks?", "0");</script>
+    <!-- display page -->
+    <h1>Welcome to Joe's Hotdogs!</h1>
+    <h3>Your Order</h3>
+    <script>
+        var tdogs = (dogs * 3.25);
+        var tfries = (fries * 2.00);
+        var tdrinks = (drinks * 1.50);
+        var subtotal = tdogs + tfries + tdrinks;
+    </script>
+    <p>
+        Hot dogs: <script>document.write(dogs)</script> at $3.25 is 
+            $<script>document.write(tdogs.toFixed(2));</script> <br>
+        French Fries: <script>document.write(fries)</script> at $2.00 is 
+            $<script>document.write((fries*2.00).toFixed(2));</script> <br>
+        Drinks: <script>document.write(drinks)</script> at $1.50 is 
+            $<script>document.write((drinks*1.50).toFixed(2));</script> <br>
+
+        <script>
+            if (subtotal >= 20) { 
+                document.write("You qualified for our 10% discount!");
+                subtotal *= .9;};
+            var tax = subtotal * .0625
+        </script>
+        <br>
+        Subtotal: $<script>document.write(subtotal.toFixed(2))</script> <br>
+        Meal Tax: $<script>document.write(tax.toFixed(2))</script> <br>
+        Total: $<script>document.write((subtotal+tax).toFixed(2))</script>
+
+
+    </p>
+
+        <!-- #dogs: # at $3.25 is $total -->
+        <!-- #fries: # at $2.00 is $total -->
+        <!-- #drinks: # at $1.50 is $total -->
+        <!-- You did/not qualify for our 10% discount (>=$20) -->
+        <!-- subtotal$ -->
+        <!-- calculate and show 6.25% mass tax -->
+        <!-- total $ -->
+</body>
+
+
+</html>
