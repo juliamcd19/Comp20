@@ -1,0 +1,50 @@
+<!-- extracredit.html
+Julia McDowell
+COMP20 Fall 2020 -->
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Extra Credit</title>
+    <script language="javascript">
+
+        function toggle(button) {
+            if (button.value == "-->") {
+                var str1 = document.form1.t1.value;
+                document.form1.t2.value = str1;
+                document.form1.t1.value = "";
+                button.value = "<--";
+            }
+            else {
+                var str1 = document.form1.t2.value;
+                document.form1.t1.value = str1;
+                document.form1.t2.value = "";
+                button.value = "-->"
+            }
+        }
+
+    </script>
+    <style>
+        .txtbox {
+            width: 30%;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>THE SWITCHINATOR</h1>
+    <form name = "form1">
+        <input type="text" class = "txtbox" name = "t1">
+        <input type = "button" value = "-->" id = "switch" onclick = "javascript:toggle(this);">
+        <input type = "text" class = "txtbox" name = "t2">
+    </form>
+    <hr>
+    
+
+</body>
+
+</html>
