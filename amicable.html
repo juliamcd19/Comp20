@@ -1,0 +1,118 @@
+<!-- amicable.html 
+Julia McDowell
+COMP20 Fall 2020-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Amicable Numbers</title>
+    <script language="javascript">
+        window.onload=function()
+        {
+            document.getElementById("show-nums").onclick =
+            function() 
+            {   
+                var strn1 = document.form1.n1.value;
+                var strn2 = document.form1.n2.value;
+                var intn1 = parseInt(strn1);
+                var intn2 = parseInt(strn2);
+
+                sum1 = addArray(getFactors(intn1)) - intn1;
+                sum2 = addArray(getFactors(intn2)) - intn2;
+                result = strn1 + " and " + strn2;
+                if ((sum1 == intn2) && (sum2 == intn1)) {
+                    result += " are amicable!";
+                }
+                else{
+                    result += " are not amicable.";
+                }
+                // VALIDATE INPUT
+                // if (Number.isInteger(n1) && Number.isInteger(n2)){
+                //     result = n1 + ", " + n2;
+                // }
+                // else
+                //     result = "Please Input Integers";
+                
+                document.getElementById("input-nums").innerHTML = result;
+            }
+        }
+
+                   
+        
+        function isFactor(num, factor) 
+        {
+            return (((num % factor) == 0) && (num > 0));
+
+        }
+        // TEST code for isFactor()
+        // document.write("125, 5:" + isFactor(125,5));
+        // document.write("125, 6:" + isFactor(125,6));
+        // document.write("-125, 5:" + isFactor(-125,5));
+        // document.write("125, -5:" + isFactor(125,-5));
+        // document.write("0, 1:" + isFactor(0,1));
+
+        
+        function showArray(arr)
+        {
+            var result = "";
+            for (i=0; i < arr.length; i++) {
+                var num = arr[i];
+                result += num.toString();
+                result += " ";
+            } 
+            document.getElementById("show-array").innerHTML = result;
+        }
+        //TEST for showArray()
+        // showArray([1, 2, 3, 4, 5])
+        // showArray([])
+        // showArray([1])
+        // showArray(["hello", 2])
+
+
+        function addArray(arr)
+        {
+            var sum = 0;
+            for (i=0; i < arr.length; i++) {
+                var num = arr[i];
+                sum += num;
+            }
+            return sum;
+        }
+        // TEST for addArray()
+        // document.write(addArray([1,2,3,4]));
+        // document.write(addArray([]));
+        // document.write(addArray([1]));
+
+        function getFactors(num)
+        {
+            var arr1 = [];
+            for (i = 1; i <= num; i++){
+                if ((num % i) == 0) {
+                    arr1.push(i);
+                }
+            }
+            return arr1;
+        }
+        //TEST for getFactors()
+        // showArray(getFactors(128));
+        // showArray(getFactors(1));
+        // showArray(getFactors(0));
+        
+        
+    
+    </script>
+</head>
+
+<body>
+    <form name="form1">
+    Enter First Number <input type = "number" name = "n1">
+    <br/>
+    Enter Second Number <input type = "number" name = "n2">
+    </form>
+    <input type = "button" value = "Amicable?" id = "show-nums">
+    <hr>
+    <div id = "input-nums"></div>
+    <!-- <div id = "show-array"></div> -->
+    
+</body>
+</html>
