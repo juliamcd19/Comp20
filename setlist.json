@@ -1,0 +1,73 @@
+// setlist.json
+// Julia McDowell
+// COMP20 Fall 2020
+
+
+setlist = [
+    {
+        "title" : "A Sunday Kind of Love",
+        "artist" : "Etta James",
+        "genre" : ["Classic Soul"],
+        "year" : 1960,
+    },
+    {
+        "title" : "Mannish Boy",
+        "artist" : "Muddy Waters",
+        "genre" : ["Blues"],
+        "year" : 1955
+    },
+    {
+        "title" : "Dream A Little Dream Of Me",
+        "artist" : "Ella Fitzgerald",
+        "genre" : ["Jazz"],
+        "year" : 1957
+    },
+    {
+        "title" : "Cheek to Cheek",
+        "artist" : "Ella Fitzgerald and Louis Armstrong",
+        "genre" : ["Jazz"],
+        "year" : 1956
+    },
+    {
+        "title" : "I'd Rather Go Blind",
+        "artist" : "Etta James",
+        "genre" : ["RnB", "Soul", "Blues"],
+        "year" : 1962
+    },
+    {
+        "title" : "Something's Got A Hold On Me",
+        "artist" : "Etta James",
+        "genre" : ["RnB"],
+        "year" : 1962
+    },
+    {
+        "title" : "La Vie En Rose",
+        "artist" : "Louis Armstrong",
+        "genre" : ["Jazz"],
+        "year" : 1944
+    },
+    {
+        "title" : "I'll Be Seeing You",
+        "artist" : "Billie Holiday",
+        "genre" : ["Jazz"],
+        "year" : 1944
+    },
+    {
+        "title" : "What A Diff'rence A Day Made",
+        "artist" : "Dinah Washington",
+        "genre" : ["Jazz"],
+        "year" : 1959
+    },
+    {
+        "title" : "At Last",
+        "artist" : "Etta James",
+        "genre" : ["Jazz"],
+        "year" : 1960
+    }
+]
+
+
+
+
+
+
