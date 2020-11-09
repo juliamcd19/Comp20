@@ -1,0 +1,81 @@
+<!-- apifun.html 
+Julia McDowell
+COMP20 Fall 2020-->
+
+<!doctype html>
+<html>
+<head>
+    <title>API Fun</title>
+    <meta charset="utf-8"/>
+    <style>
+        body {
+            text-align:center; 
+            width: 80%; 
+            margin: 0 auto;
+            background-color: #11FFF9;
+        }
+        #data {
+            background-color: white;
+           
+            padding: 20px 20px 20px 20px;
+        }
+        ul {
+            text-align: left;
+        }
+    </style>
+    <script>
+        function getAPI() {
+            /* Step 1: Make instance of request object...
+            ...to make HTTP request after page is loaded*/
+            request = new XMLHttpRequest();
+            console.log("1 - request object created");
+
+            // Step 2: Set the URL for the AJAX request to be the JSON file
+
+            request.open("GET", "https://api.chucknorris.io/jokes/random?category=food", true)
+
+            console.log("2 - opened request file");
+
+            // Step 3: set up event handler/callback
+            request.onreadystatechange = function() {
+                    console.log("3 - readystatechange event fired.");
+
+                    if (request.readyState == 4 && request.status == 200) {
+
+                            // Step 5: wait for done + success
+                            console.log("5 - response received");
+                            result = request.responseText;
+                            joke = JSON.parse(result);
+                            document.getElementById("data").innerHTML = joke["value"]; 
+                            
+                    }
+                    else if (request.readyState == 4 && request.status != 200) {
+                            document.getElementById("data").innerHTML = "Something is wrong!  Check the logs to see where this went off the rails";
+                    }
+
+                    else if (request.readyState == 3) {
+                            document.getElementById("data").innerHTML = "Too soon!  Try again";
+                    }
+            }
+        // Step 4: fire off the HTTP request
+            request.send();
+            console.log("4 - Request sent");
+        }
+        </script>
+</head>
+
+<body onload="getAPI()">
+    <h1>API Fun!</h1>
+    <h2>API used: Chuck Norris Jokes</h2>
+    <div id="data">Loading...</div>
+    <br>
+    <ul>
+        <li>This API is a JSON API for hand curated Chuck Norris jokes. It generates a random Chuck Norris joke.</li><br>
+        <li>Found on <a href="https://github.com/public-apis/public-apis">Github public api page</a> under Personality</li><br>
+        <li>I choose to use random instead of searching a specific string, along with choosing category = food, out of their list of available categories.</li><br>
+        <li>This application would be super helpful on a random joke generator or, well thats about it, but we can also say a Chuck Norris fan page. </li><br>
+        <li>I apologize if any of these jokes are inappropriate</li>
+    </ul>
+</body>
+</html>
+
